@@ -65,7 +65,10 @@ export default function SapakiDeck() {
   return (
     <main className={`sapaki-deck tone-${scenes[active].tone}`}>
       <header className="deck-header">
-        <button className="brand-lockup" onClick={() => goTo(0)} aria-label="Go to the Sapaki opening"><img src="/sapaki-logo.png" alt="Sapaki" /></button>
+        <button className="brand-lockup" onClick={() => goTo(0)} aria-label="Go to the Sapaki opening">
+          <img className="logo-on-light" src="/sapaki-logo-blue.png" alt="Sapaki" />
+          <img className="logo-on-dark" src="/sapaki-logo-white.png" alt="" aria-hidden="true" />
+        </button>
         <nav aria-label="Investor deck sections">
           {scenes.map((scene, index) => (
             <button key={scene.id} className={index === active ? "is-active" : index < active ? "is-seen" : ""} onClick={() => goTo(index)} aria-label={`Go to ${scene.label}`} aria-current={index === active ? "step" : undefined}><span /></button>
@@ -99,7 +102,7 @@ export default function SapakiDeck() {
         </article>
 
         <article className={`deck-scene scene-platform ${active === 5 ? "is-active" : ""}`} id="platform">
-          <div className="scene-inner platform-layout"><header><span className="eyebrow">05 / Sapaki</span><h2>One platform.<br /><em>Many robot makers.</em></h2></header><div className="platform-core"><img src="/sapaki-logo.png" alt="Sapaki" /><span>EU MARKET OPERATING LAYER</span></div><div className="platform-flow"><div><span>01</span><strong>Select</strong></div><i>→</i><div><span>02</span><strong>Qualify</strong></div><i>→</i><div><span>03</span><strong>Import</strong></div><i>→</i><div><span>04</span><strong>Distribute</strong></div><i>→</i><div><span>05</span><strong>Support</strong></div></div><div className="platform-ends"><span>Diverse global manufacturers</span><span>European retailers · operators · homes</span></div></div>
+          <div className="scene-inner platform-layout"><header><span className="eyebrow">05 / Sapaki</span><h2>One platform.<br /><em>Many robot makers.</em></h2></header><div className="platform-core"><img src="/sapaki-logo-blue.png" alt="Sapaki" /><span>EU MARKET OPERATING LAYER</span></div><div className="platform-flow"><div><span>01</span><strong>Select</strong></div><i>→</i><div><span>02</span><strong>Qualify</strong></div><i>→</i><div><span>03</span><strong>Import</strong></div><i>→</i><div><span>04</span><strong>Distribute</strong></div><i>→</i><div><span>05</span><strong>Support</strong></div></div><div className="platform-ends"><span>Diverse global manufacturers</span><span>European retailers · operators · homes</span></div></div>
         </article>
 
         <article className={`deck-scene scene-service ${active === 6 ? "is-active" : ""}`} id="service">
