@@ -23,7 +23,7 @@ type SignalVideoReelProps = {
 
 export default function SignalVideoReel({ active }: SignalVideoReelProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const transitionTimer = useRef<ReturnType<typeof window.setTimeout> | null>(null);
+  const transitionTimer = useRef<number | null>(null);
   const transitionLocked = useRef(false);
   const [clipIndex, setClipIndex] = useState(0);
   const [transitioning, setTransitioning] = useState(true);
