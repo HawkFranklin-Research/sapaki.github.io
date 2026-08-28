@@ -1,6 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import RobotMediaOrb from "./components/RobotMediaOrb";
+import SignalHighlightVideo from "./components/SignalHighlightVideo";
+import SignalVideoReel from "./components/SignalVideoReel";
 
 const scenes = [
   { id: "opening", label: "Opening", tone: "dark" },
@@ -79,13 +82,13 @@ export default function SapakiDeck() {
 
       <section className="deck-reel" ref={reelRef}>
         <article className={`deck-scene scene-opening ${active === 0 ? "is-active" : ""}`} id="opening">
-          <div className="opening-grid" aria-hidden="true" /><div className="orbit orbit-one" aria-hidden="true" /><div className="orbit orbit-two" aria-hidden="true" />
+          <div className="opening-grid" aria-hidden="true" />
           <div className="scene-inner opening-copy"><span className="eyebrow">A HawkFranklin OÜ venture</span><h1>The robots<br />are ready.<br /><em>Europe isn&apos;t.</em></h1><div className="opening-line"><span>Distribution</span><i /><span>Approval</span><i /><span>Service</span></div><button className="scroll-cue" onClick={() => goTo(1)}><span>Scroll the case</span><b>↓</b></button></div>
-          <div className="robot-mark" aria-hidden="true"><span className="robot-head" /><span className="robot-body" /><i className="robot-arm arm-left" /><i className="robot-arm arm-right" /><i className="robot-leg leg-left" /><i className="robot-leg leg-right" /><b>01</b></div>
+          <RobotMediaOrb active={active === 0} />
         </article>
 
         <article className={`deck-scene scene-signal ${active === 1 ? "is-active" : ""}`} id="signal">
-          <div className="scene-inner signal-layout"><div className="signal-copy"><span className="eyebrow">01 / The signal</span><h2>Robotics is no longer a promise.<br /><em>It is a performance.</em></h2></div><div className="media-stage" aria-label="Reserved media area for World Humanoid Robot Games photography"><div className="media-crop crop-run"><b>X MEDIA SLOT</b><span>RUNNING</span></div><div className="media-crop crop-play"><b>X MEDIA SLOT</b><span>FOOTBALL</span></div><div className="media-caption">WORLD HUMANOID ROBOT GAMES · BEIJING · 2026</div></div><div className="signal-numbers"><strong>2,000+</strong><span>humanoid robots</span><strong>16</strong><span>countries</span></div></div>
+          <div className="scene-inner signal-layout"><div className="signal-copy"><span className="eyebrow">01 / The signal</span><h2>Robotics is no longer a promise.<br /><em>It is a performance.</em></h2></div><div className="media-stage" aria-label="World Humanoid Robot Games media"><div className="media-crop crop-run"><SignalVideoReel active={active === 1} /></div><div className="media-crop crop-play"><SignalHighlightVideo active={active === 1} /></div><div className="media-caption">WORLD HUMANOID ROBOT GAMES · BEIJING · 2026</div></div><div className="signal-numbers"><strong>2,000+</strong><span>humanoid robots</span><strong>16</strong><span>countries</span></div></div>
         </article>
 
         <article className={`deck-scene scene-europe ${active === 2 ? "is-active" : ""}`} id="europe">
