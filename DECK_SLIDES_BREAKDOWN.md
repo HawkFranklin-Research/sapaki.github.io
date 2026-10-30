@@ -320,4 +320,5 @@ The entire presentation is built with Next.js (App Router) in static export mode
     * Style: Pill container, dark background (`--ink`), white text, acid lime arrow (`#c8ff4a`).
   * **Footer (Bottom):**
     * Left Notice: `Sapaki × HawkFranklin OÜ · Investor concept · August 2026` (`Geist Mono`, 9px).
+    * Center Link: `Execution & diligence deck ↗` (`/diligence.html#why-now`, class `.dd-deck-link`) linking to the 10-chapter execution & diligence scroll deck.
     * Right Collapsible (`<details>`): `Research notes` with Eurostat, ELA, and EU Directives references.

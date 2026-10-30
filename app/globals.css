@@ -5,6 +5,8 @@
 html,body { margin:0; background:var(--ink); color:var(--paper); }
 body { font-family:var(--font-geist-sans),Arial,sans-serif; }
 button,a { font:inherit; }
+.dd-deck-link { text-decoration:underline; text-underline-offset:4px; font:600 11px/1.4 var(--font-geist-mono),monospace; }
+.raise-layout footer:has(.dd-deck-link) { flex-wrap:wrap; row-gap:14px; }
 .entry-page { min-height:100svh; display:grid; place-content:center; gap:2rem; padding:2rem; text-align:center; background:var(--paper); color:var(--ink); }
 .entry-logo { width:min(360px,80vw); margin:auto; }
 .entry-page h1 { margin:0; font-size:clamp(2.4rem,7vw,6rem); letter-spacing:-.065em; }
