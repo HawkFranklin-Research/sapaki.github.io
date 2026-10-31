@@ -4,16 +4,16 @@ import "./diligence.css";
 
 export const metadata: Metadata = {
   title: "Sapaki — Execution & Diligence",
-  description: "Ten chapters on Sapaki’s trade corridors, compliance architecture, service network and pre-seed execution model.",
+  description: "Follow one robot order from a factory in Vietnam to a hospital in Berlin: the rules, the risks, the repairs and the plan to prove it.",
   openGraph: {
     title: "Sapaki — Execution & Diligence",
-    description: "Trade corridors, compliance architecture, service economics and the $350k pre-seed plan.",
+    description: "One robot order, start to finish — and the $350k plan to prove it twenty times.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Sapaki — Execution & Diligence",
-    description: "Trade corridors, compliance architecture, service economics and the $350k pre-seed plan.",
+    description: "One robot order, start to finish — and the $350k plan to prove it twenty times.",
   },
 };
 
