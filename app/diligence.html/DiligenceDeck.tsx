@@ -85,7 +85,7 @@ export function DiligenceDeckScenes({
 }) {
   return (
     <>
-      <section className={`deck-scene dd-scene dd-dark dd-first ${activeChapter === 0 ? "is-current" : ""}`} id="why-now" aria-label="Why now">
+      <section className={`dd-scene dd-dark dd-first ${activeChapter === 0 ? "is-current" : ""}`} id="why-now" aria-label="Why now">
         <div className="opening-grid" aria-hidden="true" />
         <div className="dd-inner">
           <Heading index={0} title="Robots are getting cheaper." accent="The rules are getting stricter." />
@@ -127,7 +127,7 @@ export function DiligenceDeckScenes({
         </div>
       </section>
 
-      <section className={`deck-scene dd-scene dd-light ${activeChapter === 1 ? "is-current" : ""}`} id="corridors" aria-label="Corridor prioritisation">
+      <section className={`dd-scene dd-light ${activeChapter === 1 ? "is-current" : ""}`} id="corridors" aria-label="Corridor prioritisation">
         <div className="dd-inner">
           <Heading index={1} title="Open one road first." accent="Then build the next." />
           <Story>We won’t try to open the whole world at once. Minh’s robot goes to Berlin first. Once that road works every time, we build the second.</Story>
@@ -143,7 +143,7 @@ export function DiligenceDeckScenes({
         </div>
       </section>
 
-      <section className={`deck-scene dd-scene dd-dark ${activeChapter === 2 ? "is-current" : ""}`} id="customs" aria-label="Customs intelligence">
+      <section className={`dd-scene dd-dark ${activeChapter === 2 ? "is-current" : ""}`} id="customs" aria-label="Customs intelligence">
         <div className="dd-inner">
           <Heading index={2} title="What do you call a robot?" accent="Customs has to decide." />
           <Story>Every product that crosses a border needs a name customs understands, and that name sets the tax. Robots are new, so the right name isn’t obvious. Get it wrong and the crate waits at the port.</Story>
@@ -158,7 +158,7 @@ export function DiligenceDeckScenes({
         </div>
       </section>
 
-      <section className={`deck-scene dd-scene dd-light ${activeChapter === 3 ? "is-current" : ""}`} id="liability" aria-label="Liability architecture">
+      <section className={`dd-scene dd-light ${activeChapter === 3 ? "is-current" : ""}`} id="liability" aria-label="Liability architecture">
         <div className="dd-inner">
           <Heading index={3} title="If something goes wrong," accent="everyone knows their part." />
           <Story>If the robot in Hanna’s hospital ever hurts someone, the first question is who answers for it. We settle that in writing, order by order, before any money moves.</Story>
@@ -197,7 +197,7 @@ export function DiligenceDeckScenes({
         </div>
       </section>
 
-      <section className={`deck-scene dd-scene dd-dark ${activeChapter === 4 ? "is-current" : ""}`} id="batteries" aria-label="Dangerous goods logistics">
+      <section className={`dd-scene dd-dark ${activeChapter === 4 ? "is-current" : ""}`} id="batteries" aria-label="Dangerous goods logistics">
         <div className="dd-inner">
           <Heading index={4} title="The robot is easy to ship." accent="The battery isn't." />
           <Story>A humanoid’s battery stores many times the energy of a laptop’s. That makes it dangerous cargo, and a single missing form can stop the whole shipment.</Story>
@@ -213,7 +213,7 @@ export function DiligenceDeckScenes({
         </div>
       </section>
 
-      <section className={`deck-scene dd-scene dd-light ${activeChapter === 5 ? "is-current" : ""}`} id="engine" aria-label="Compliance engine">
+      <section className={`dd-scene dd-light ${activeChapter === 5 ? "is-current" : ""}`} id="engine" aria-label="Compliance engine">
         <div className="dd-inner">
           <Heading index={5} title="Software does the paperwork." accent="People sign it." />
           <Story>Most of the work is reading documents and spotting what’s missing, which software does well. Anything that needs a licence or a signature stays with a qualified person.</Story>
@@ -254,7 +254,7 @@ export function DiligenceDeckScenes({
         </div>
       </section>
 
-      <section className={`deck-scene dd-scene dd-dark ${activeChapter === 6 ? "is-current" : ""}`} id="after-sale" aria-label="After-sales service">
+      <section className={`dd-scene dd-dark ${activeChapter === 6 ? "is-current" : ""}`} id="after-sale" aria-label="After-sales service">
         <div className="dd-inner">
           <Heading index={6} title="We don't just sell the robot." accent="We keep it working." />
           <Story>One Tuesday morning, Hanna’s robot stops mid-shift. Who does the hospital call? Not a factory three weeks away. We make sure someone nearby picks up.</Story>
@@ -278,7 +278,7 @@ export function DiligenceDeckScenes({
         </div>
       </section>
 
-      <section className={`deck-scene dd-scene dd-light ${activeChapter === 7 ? "is-current" : ""}`} id="competition" aria-label="Competitive landscape">
+      <section className={`dd-scene dd-light ${activeChapter === 7 ? "is-current" : ""}`} id="competition" aria-label="Competitive landscape">
         <div className="dd-inner">
           <Heading index={7} title="Others do part of this." accent="We join it up." />
           <Story>Hanna already has places to look for a robot. The hard part comes after she picks one: the paperwork, the shipping, and the repairs. That’s the part we’re building.</Story>
@@ -328,7 +328,7 @@ export function DiligenceDeckScenes({
         </div>
       </section>
 
-      <section className={`deck-scene dd-scene dd-dark ${activeChapter === 8 ? "is-current" : ""}`} id="economics" aria-label="Unit economics">
+      <section className={`dd-scene dd-dark ${activeChapter === 8 ? "is-current" : ""}`} id="economics" aria-label="Unit economics">
         <div className="dd-inner">
           <Heading index={8} title="One order." accent="Several ways to earn." />
           <Story>Selling Minh’s robot to Hanna is the first payment, not the only one. Try it yourself: move the sliders and see what a handful of orders could become.</Story>
@@ -368,7 +368,7 @@ export function DiligenceDeckScenes({
         </div>
       </section>
 
-      <section className={`deck-scene dd-scene dd-light ${activeChapter === 9 ? "is-current" : ""}`} id="execution" aria-label="Pre-seed execution">
+      <section className={`dd-scene dd-light ${activeChapter === 9 ? "is-current" : ""}`} id="execution" aria-label="Pre-seed execution">
         <div className="dd-inner">
           <Heading index={9} title="Do it by hand first." accent="Twenty orders to prove it." />
           <Story>We won’t build software for a process we haven’t run ourselves. First we handle 20 real orders with experts and partners, and learn exactly what is worth automating.</Story>
